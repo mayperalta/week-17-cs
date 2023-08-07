@@ -60,12 +60,25 @@ There are 3 bracket expressions within the current regex providing sets of chara
 
 Character Classes match a character in the input string to any one character set within it.
 
+"a-z" is a lowercase character range
+"0-9" is a digit character range
+"\d" is one of the “metacharacters” for matching strings
+"_" and "-" match their respective characters literally
+"." matches a period literally
+"@" and the external "." match their respective characters literally at certain positions in the input string
+
 ### The OR Operator
+
+The "|" is an OR character that matches any of the characters in the expression. For example, "abc|xyz" returns "abc or xyz". 
 
 ### Flags
 
+A flag is an optional parameter to a regex that modifies its behavior of searching. A flag changes the default searching behavior of a regular expression. It makes a regex search in a different way. A flag is denoted using a single lowercase alphabetic character.
+
 ### Character Escapes
+
+Whenever you want to match a syntax character literally, you need to escape it with a backslash ( \ ). For example, to match a literal * in a pattern, you need to write \* in the pattern.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+I'm May Peralta, the author of this tutorial document. For more information, view my github at https://github.com/mayperalta/week-17-cs.
