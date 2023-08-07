@@ -34,7 +34,7 @@ Quantifiers match a number of instances of a character, group, or character clas
 
 There are two quantifiers in this regex, the + character and (2) a range of {2,6}.
 
-Quantifier + tells our regex to match everything within the Capture group () which is (user email name)@(mailserver)+(domain).
+Quantifier + tells our regex to match everything within the Capture group () which in this case is (user email name)@(mailserver)+(domain).
 
 Quantifier {2,6} will allow a match range of 2-6 characters for the character set of [a-z\.].
 
@@ -47,6 +47,14 @@ Group constructs bind expressions together to evaluate specific information in a
 - Group #3 in this expression is ([a-z\.]{2,6}) that matches the domain. 
 
 ### Bracket Expressions
+
+Bracket expressions are a list of characters and/or character classes enclosed in brackets [].
+
+There are 3 bracket expressions within the current regex providing sets of character classes.
+
+- Bracket #1 [a-z0-9_\.-] states that it can use any lowercase letter (a-z), any digit (0-9), an underscore, period.
+- Bracket #2 [\da-z\.-] states that it can use one or more digits, any lowercase letter (a-z), a period, and a hyphen.
+- Bracket #3 [a-z\.] states that it can use any lowercase letter (a-z)
 
 ### Character Classes
 
