@@ -22,18 +22,6 @@ This tutorial will walk-through the components of a regex and how it applies to 
 
 ## Regex Components
 
-^ - Anchor (Start)
-$ - Anchor (End)
-() - Grouping Construct (Subexpression)
-[] - Bracket Expression (Character Group)
-a-z - Character Class (Character Range)
-0-9 - Character Class (Character Range)
-space - Escape
-_, -, ., @ - Character Class (Literal Matches)
-+ - Quantifier (match previous element between one and unlimited times, as many as possible)
-{2,6} - Quantifier (match previous element between 2-6 times, as many as possible)
-Greedy Match - Match Type (match largest possible group)
-
 ### Anchors
 
 Anchors provide a way to limit how a regex matches a particular string by telling the regex engine where matches can begin and where they can end.
